@@ -1,0 +1,26 @@
+{
+  "name": "micro-controller-api",
+  "version": "1.0.0",
+  "description": "A RESTful API for tracking Units and collecting data from stations inserting parts or conducting tests",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelLopez8/micro-controller-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelLopez8/micro-controller-api/issues"
+  },
+  "homepage": "https://github.com/AngelLopez8/micro-controller-api#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7"
+  }
+}

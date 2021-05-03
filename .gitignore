@@ -1,0 +1,5 @@
+# node_modules folder and it's contents is ignored
+node_modules
+
+# .env containing database access information is ignored
+.env
