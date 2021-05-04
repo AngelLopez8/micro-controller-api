@@ -25,7 +25,7 @@ export const getUnit = async (req, res) => {
     
     // Attempt to find Unit with given Serial Number and send unit in JSON format
     try {
-        const unit = await Unit.find({ serialNum: id });
+        const unit = await Unit.find({ serialNum: sn });
 
         res.status(200).json(unit);
     } catch (error) {
