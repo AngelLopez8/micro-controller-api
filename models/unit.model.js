@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const unitSchema = mongoose.Schema({
     serialNum: {
-        type: Number,
+        type: String,
         require: true
     },
     type: {

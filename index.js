@@ -10,7 +10,12 @@ const app = express();
 app.use(express.json({}));
 app.use(express.urlencoded({ extended: true }));
 
+// routes
 app.use('/units', unitRoutes);
+
+app.get('/', (req, res) => {
+    res.send("Welcome to Micro-Controller API");
+});
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;

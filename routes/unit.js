@@ -4,16 +4,16 @@ import { createUnit, getUnit, updateUnit, deleteUnit } from '../controllers/unit
 
 const router = express.Router();
 
-// Create
+// Create new Unit instance
 router.post('/', createUnit);
 
-// Read
-router.get('/:id', getUnit);
+// Retrive existing Unit with given Serial Number
+router.get('/:sn', getUnit);
 
-// Update
+// Update existing Unit with updated data
 router.patch('/:id', updateUnit);
 
-// Delete
-router.patch('/:id', deleteUnit);
+// Delete an instance with given id
+router.delete('/:id', deleteUnit);
 
 export default router;
